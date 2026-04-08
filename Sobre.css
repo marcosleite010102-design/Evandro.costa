@@ -1,0 +1,154 @@
+/* ==========================================================
+   CSS DO PORTFÓLIO - MANTENDO SEU ESTILO ORIGINAL
+   ========================================================== */
+
+/* 1. CONFIGURAÇÕES GERAIS E DEGRADÊ (Você já tinha) */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* Degradê aplicado ao corpo inteiro */
+    background: linear-gradient(180deg, #000000 0%, #1a1a1a 50%, #2c3e50 100%);
+    background-attachment: fixed; 
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* 2. HEADER (CABEÇALHO) (Você já tinha) */
+header {
+    padding: 60px 20px;
+    text-align: center;
+    background: transparent; /* Garante que o degradê apareça ao fundo */
+}
+
+header h1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header h1 span {
+    font-weight: 300;
+    color: #aaa; /* Cinza claro para contraste no fundo escuro */
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* ----------------------------------------------------------
+   3. LAYOUT DA PÁGINA SOBRE (ADICIONE ISTO AQUI)
+   ---------------------------------------------------------- */
+
+/* Container Principal para centralizar o conteúdo na tela */
+.sobre-container {
+    max-width: 1200px; /* Impede que o texto fique muito esticado em telas grandes */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 50px 20px; /* Espaçamento interno */
+}
+
+/* Section que contém Texto e Imagem */
+.sobre-conteudo {
+    display: flex; /* Ativa o layout flexível */
+    align-items: center; /* Centraliza verticalmente texto e imagem */
+    justify-content: space-between; /* Dá espaço entre eles */
+    gap: 60px; /* Espaçamento exato entre o fim do texto e o início da foto */
+}
+
+/* Estilização da Coluna de Texto */
+.sobre-texto {
+    flex: 1.2; /* O texto ocupa um pouco mais de espaço (1.2 partes) */
+}
+
+.sobre-texto h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.sobre-texto h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #e7e7e7; /* Toque de cor harmônico */
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    font-size: 1rem;
+    font-weight: 300; /* Texto mais fino e chique */
+    line-height: 1.8; /* Espaçamento entre linhas confortável */
+    color: #ddd; /* Branco acinzentado para legibilidade suave */
+    margin-bottom: 20px;
+}
+
+/* Estilização da Coluna da Imagem */
+.sobre-imagem {
+    flex: 1; /* A imagem ocupa 1 parte do espaço */
+    display: flex;
+    justify-content: center; /* Garante centralização interna se necessário */
+}
+
+/* Estilo harmônico da foto 'sobre.jpeg' */
+.foto-perfil {
+    width: 100%;
+    max-width: 450px; /* Tamanho máximo elegante para a foto */
+    height: auto; /* Mantém a proporção */
+    border-radius: 12px; /* Bordas levemente arredondadas (combina com o portfólio) */
+    
+    /* Efeito de sombra profundo e suave para combinar com o fundo escuro */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    
+    /* Leve filtro para integrar a foto ao degradê de fundo */
+    filter: brightness(0.95) contrast(1.05);
+    
+    transition: 0.3s ease; /* Transição suave para efeitos */
+}
+
+/* Efeito sutil ao passar o mouse na foto (hover) */
+.foto-perfil:hover {
+    transform: translateY(-5px); /* Foto sobe levemente */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+/* ----------------------------------------------------------
+   4. RESPONSIVIDADE (PARA CELULARES)
+   ---------------------------------------------------------- */
+@media (max-width: 900px) {
+    .sobre-conteudo {
+        flex-direction: column-reverse; /* Empilha: Foto em cima, Texto embaixo */
+        text-align: center;}}
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6); /* Leve fundo escuro para separar da galeria */
+    margin-top: 50px;
+}
