@@ -53,7 +53,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #007bff;
 }
-
+.sobre-container {
+    max-width: 1200px; /* Impede que o texto fique muito esticado em telas grandes */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 50px 20px; /* Espaçamento interno */
+}
 /* 3. GALERIA (RESOLVENDO O TAMANHO DAS IMAGENS) */
 .galeria {
     display: grid;
